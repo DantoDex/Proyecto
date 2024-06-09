@@ -1,0 +1,93 @@
+body {
+    background-image: url(prueba1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.botton {
+    padding: 20px;
+}
+
+.contenido {
+    background-color: transparent;
+}
+
+.container-navbar {
+    background-color: var(--primary-color);
+    align-items: center;
+
+    width: 50%;
+    margin: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.menu {
+    display: flex;
+    gap: 2rem;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: var(--dark-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    border: solid 3px;
+    border-collapse: collapse;
+    padding: 10px;  
+    border-radius: 10px;
+}
+
+.menu a:hover {
+    color: #b8b7b7;
+}
+
+.container-1{
+    border-radius: 10px;
+    border-collapse: collapse;
+    padding: 20px;  
+    background-color: gray;
+    display: grid;
+}
+
+input[type="text"],
+input[type="text"],
+input[type="number"] {
+    padding: 5px;
+    width: 70%;
+    display: block; 
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    background-color: transparent;
+    color: black;
+}
+
+#nombre::placeholder,
+#apellido::placeholder,
+#numero::placeholder,
+#evento::placeholder {
+    color: black;
+}
+
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input:focus{
+    background: transparent;
+}

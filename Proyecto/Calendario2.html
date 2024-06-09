@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contacto</title>
+    <!--CSS only-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container-navbar">
+            <nav class="navbar container">
+                <ul class="menu" id="menu-list">
+                    <li><a href="Calendario2.html">Agenda</a></li>
+                    <li><a href="Calendario1.html">Calendario</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="contenido">
+        <section class="container">
+            <div class="container-1">
+                <div class="container-2">
+                    <h4>Contacto</h4>
+                </div>
+                <div class="container-2">
+                    <form id="formulario">
+                        <div class="row mb-2">
+                            <div class="col">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" class="form-control" name="nombre" id="nombre"
+                                    placeholder="ej: Juan" required>
+                            </div>
+                            <div class="col">
+                                <label for="apellido">Apellido</label>
+                                <input type="text" class="form-control" name="apellido" id="apellido"
+                                    placeholder="ej: Diaz" required>
+                            </div>
+                        </div>
+                        <div class="mb-2">
+                            <label for="numero">Número de WhatsApp</label>
+                            <input type="number" class="form-control" name="numero" id="numero"
+                                placeholder="ej: 12345678" required>
+                        </div>
+                        <div class="mb-2">
+                            <button type="submit" class="btn btn-primary">Agregar Contacto</button>
+                            <button type="submit" id="guardarCambios" style="display: none;">Guardar Cambios</button>
+                        </div>
+                    </form>
+                    
+                </div>
+                <!-- Aquí se mostrarán los contactos -->
+                <div id="contactos" class="mt-4">
+                    <!-- Lista de contactos -->
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="Calendario2.js"></script>
+
+    
+</body>
+
+</html>
